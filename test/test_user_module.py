@@ -10,11 +10,11 @@ async def test_basic_addition(dut):
     B = 2
 
     # Codificar en io_in: [7:5]=sel, [4:2]=A, [1:0]=B
-    dut.io_in.value = (sel << 5) | (A << 2) | B
+    dut.ui_in.value = (sel << 5) | (A << 2) | B
 
     await Timer(10, units='ns')
 
     expected = A + B
-    actual = dut.io_out.value.integer
+    actual = dut.ui_out.value.integer
 
     assert actual == expected, f"Suma fallida: esperado {expected}, obtenido {actual}"
