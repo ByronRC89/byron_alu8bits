@@ -15,10 +15,10 @@ project:
     - "carry_lookahead_adder_8bit.v"
 
 pinout:
-  ui[0]: "[7:0] sw"
-  ui[1]: "btn0"
-  ui[2]: "btn1"
-  ui[3]: "clk"
+  ui[0]: "[7:0] sw, btn0, btn1"
+  ui[1]: "clk"
+  ui[2]: ""
+  ui[3]: ""
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
