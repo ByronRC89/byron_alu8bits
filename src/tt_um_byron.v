@@ -23,6 +23,6 @@ module tt_um_byron (
         .Cout(cout)
     );
 
-    assign io_out = result;
+    assign uo_out = result;
 
 endmodule
