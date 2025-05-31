@@ -14,11 +14,11 @@ Este proyecto implementa una **Unidad Aritmético Lógica (ALU)** de 8 bits que 
 | 011            | A | B (OR)       |
 | otro           | Resultado = 0    |
 
-- Entradas: `io_in[7:0]`  
-  - `A[3:0] = io_in[7:4]`  
-  - `B[3:0] = io_in[3:0]`  
-  - `sel[2:0] = io_in[2:0]`  
-- Salida: `io_out[7:0] = resultado de la operación`
+- Entradas: `ui_in[7:0]`  
+  - `A[3:0] = ui_in[7:4]`  
+  - `B[3:0] = ui_in[3:0]`  
+  - `sel[2:0] = ui_in[2:0]`  
+- Salida: `uo_out[7:0] = resultado de la operación`
 
 > Internamente se extienden los operandos a 8 bits (relleno con ceros a la izquierda).
 
