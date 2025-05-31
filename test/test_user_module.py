@@ -15,6 +15,6 @@ async def test_basic_addition(dut):
     await Timer(10, units='ns')
 
     expected = A + B
-    actual = dut.ui_out.value.integer
+    actual = dut.uo_out.value.integer
 
     assert actual == expected, f"Suma fallida: esperado {expected}, obtenido {actual}"
