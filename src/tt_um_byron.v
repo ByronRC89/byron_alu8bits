@@ -4,9 +4,9 @@ module tt_um_byron (
     output [7:0] uio_out,
     input  [7:0] uio_in,
     output [7:0] uio_oe,
-    input clk,
-    input ena,
-    input rst_n
+   // input clk,
+    //input ena,
+    //input rst_n
 );
 
     // Mapeo sin solapamiento:
@@ -16,6 +16,8 @@ module tt_um_byron (
 
     wire [7:0] result;
     wire cout;
+    wire [7:0] d;
+
 
     // Expandir A y B a 8 bits para la ALU
     alu_8bit alu_inst (
@@ -27,5 +29,8 @@ module tt_um_byron (
     );
 
     assign uo_out = result;
+    assign uio_out = 8'b00000000; // o alguna lógica válida
+    assign uio_oe = 8'b00000000;        // habilita todas las salidas
+    assign d = uio_in;
 
 endmodule
