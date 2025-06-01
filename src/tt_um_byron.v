@@ -1,6 +1,7 @@
 module tt_um_byron (
     input  [7:0] ui_in,
     output [7:0] uo_out,
+    output [7:0] uio_out,
     input clk,
     input ena,
     input rst_n
